@@ -20,6 +20,7 @@
 		778E904F23E4887A002F067A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E904E23E4887A002F067A /* Character.swift */; };
 		77C1AEE923EA1BE700EFAF31 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AEE823EA1BE700EFAF31 /* Starjedi.ttf */; };
 		77C1AEEB23EA22E500EFAF31 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1AEEA23EA22E500EFAF31 /* CharacterData.swift */; };
+		77C1AEED23EB137F00EFAF31 /* CharacterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1AEEC23EB137F00EFAF31 /* CharacterScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		778E904E23E4887A002F067A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		77C1AEE823EA1BE700EFAF31 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		77C1AEEA23EA22E500EFAF31 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		77C1AEEC23EB137F00EFAF31 /* CharacterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				778E904C23E39F31002F067A /* MenuScreen.swift */,
+				77C1AEEC23EB137F00EFAF31 /* CharacterScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				778E901F23E39E70002F067A /* SWAPI_SwiftUI.xcdatamodeld in Sources */,
 				778E901A23E39E70002F067A /* AppDelegate.swift in Sources */,
 				778E904F23E4887A002F067A /* Character.swift in Sources */,
+				77C1AEED23EB137F00EFAF31 /* CharacterScreen.swift in Sources */,
 				778E902123E39E70002F067A /* ContentView.swift in Sources */,
 				778E901C23E39E70002F067A /* SceneDelegate.swift in Sources */,
 			);

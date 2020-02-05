@@ -38,7 +38,6 @@ struct MenuScreen: View {
     
     func onPressCharacter(character: Character){
         self.selectedCharacter.selectedCharacter = character
-        print("character here \(self.selectedCharacter.selectedCharacter)")
     }
     
     var body: some View {
@@ -48,10 +47,14 @@ struct MenuScreen: View {
                     .font(.custom("Starjedi", size: 48))
                     .foregroundColor(.yellow)
                 List(results, id: \.birth_year) { item in
-                    VStack(alignment: .leading){
-                        Text(item.name)
-                            .font(.headline)
-                        Text(item.birth_year)
+                        VStack(alignment: .leading){
+                            NavigationLink(destination:  CharacterScreen()){
+                            Button(action: {self.onPressCharacter(character: item)}) {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.birth_year)
+                            }
+                        }
                     }
                 }
                 .listStyle(GroupedListStyle())
