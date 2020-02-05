@@ -16,6 +16,10 @@
 		778E902923E39E72002F067A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778E902723E39E72002F067A /* LaunchScreen.storyboard */; };
 		778E903423E39E72002F067A /* SWAPI_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E903323E39E72002F067A /* SWAPI_SwiftUITests.swift */; };
 		778E903F23E39E72002F067A /* SWAPI_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E903E23E39E72002F067A /* SWAPI_SwiftUIUITests.swift */; };
+		778E904D23E39F31002F067A /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E904C23E39F31002F067A /* MenuScreen.swift */; };
+		778E904F23E4887A002F067A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E904E23E4887A002F067A /* Character.swift */; };
+		77C1AEE923EA1BE700EFAF31 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AEE823EA1BE700EFAF31 /* Starjedi.ttf */; };
+		77C1AEEB23EA22E500EFAF31 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1AEEA23EA22E500EFAF31 /* CharacterData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		778E903A23E39E72002F067A /* SWAPI-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SWAPI-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E903E23E39E72002F067A /* SWAPI_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPI_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		778E904023E39E72002F067A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		778E904C23E39F31002F067A /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		778E904E23E4887A002F067A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		77C1AEE823EA1BE700EFAF31 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		77C1AEEA23EA22E500EFAF31 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,9 @@
 		778E901823E39E70002F067A /* SWAPI-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				77DFC45F23EA17120065C584 /* fonts */,
+				778E905123E4BB20002F067A /* screens */,
+				778E905023E4BB03002F067A /* models */,
 				778E901923E39E70002F067A /* AppDelegate.swift */,
 				778E901B23E39E70002F067A /* SceneDelegate.swift */,
 				778E902023E39E70002F067A /* ContentView.swift */,
@@ -137,6 +148,31 @@
 				778E904023E39E72002F067A /* Info.plist */,
 			);
 			path = "SWAPI-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		778E905023E4BB03002F067A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				778E904E23E4887A002F067A /* Character.swift */,
+				77C1AEEA23EA22E500EFAF31 /* CharacterData.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		778E905123E4BB20002F067A /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				778E904C23E39F31002F067A /* MenuScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		77DFC45F23EA17120065C584 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				77C1AEE823EA1BE700EFAF31 /* Starjedi.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +282,7 @@
 				778E902923E39E72002F067A /* LaunchScreen.storyboard in Resources */,
 				778E902623E39E72002F067A /* Preview Assets.xcassets in Resources */,
 				778E902323E39E72002F067A /* Assets.xcassets in Resources */,
+				77C1AEE923EA1BE700EFAF31 /* Starjedi.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C1AEEB23EA22E500EFAF31 /* CharacterData.swift in Sources */,
+				778E904D23E39F31002F067A /* MenuScreen.swift in Sources */,
 				778E901F23E39E70002F067A /* SWAPI_SwiftUI.xcdatamodeld in Sources */,
 				778E901A23E39E70002F067A /* AppDelegate.swift in Sources */,
+				778E904F23E4887A002F067A /* Character.swift in Sources */,
 				778E902123E39E70002F067A /* ContentView.swift in Sources */,
 				778E901C23E39E70002F067A /* SceneDelegate.swift in Sources */,
 			);
