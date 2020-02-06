@@ -41,29 +41,34 @@ struct MenuScreen: View {
     }
     
     var body: some View {
-        ZStack{
-            VStack{
+        NavigationView {
+            VStack {
                 Text("StarWars")
-                    .font(.custom("Starjedi", size: 48))
+                    .font(.custom("Starjedi", size: 50))
                     .foregroundColor(.yellow)
+                    .shadow(radius: 28)
                 List(results, id: \.birth_year) { item in
-                        VStack(alignment: .leading){
-                            NavigationLink(destination:  CharacterScreen()){
-                            Button(action: {self.onPressCharacter(character: item)}) {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.birth_year)
-                            }
-                        }
-                    }
-                }
-                .listStyle(GroupedListStyle())
+                    NavigationLink(destination: CharacterScreen()){Text("hello")}
+                        .opacity(0.0)
+                        .frame(width: 10)
+                    HStack{
+                        Image(item.name).resizable()
+                            .frame(width: 75.0, height: 100.0)
+                        VStack(alignment: .leading) {
+                                Button(action: {self.onPressCharacter(character: item)}) {
+                                Text(item.name)
+                                    .font(.headline).bold().italic()
+                                    .foregroundColor(Color.black)
+                                }
+                       }
+                   }
+                    
             }
-            
         }.onAppear {
             self.getData()
         }
-    }
+      }
+   }
 }
 
 struct MenuScreen_Previews: PreviewProvider {
